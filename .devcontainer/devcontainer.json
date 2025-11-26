@@ -1,0 +1,19 @@
+{
+	"name": "AIAP Lab",
+	"image": "mcr.microsoft.com/devcontainers/python:latest",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"bierner.markdown-mermaid",
+				"github.copilot@prerelease",
+				"github.copilot-chat@prerelease",
+				"ms-python.python"
+			]
+		}
+	},
+	"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
+}
